@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body{
+    background-color: rgb(1, 255, 225);
+}
+.container{
+    height: 90vh;
+    width: 40vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+    margin-top: 5vh;
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px 10px rgb(138, 135, 135);
+    font-family: sans-serif;
+}
+.screen{
+    height: 20vh;
+    width: 95%;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.screen input{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(57, 46, 46);
+    border-radius: 20px;
+}
+.buttons{
+    height: 65vh;
+    width: 95%;
+    margin-top: 10px;
+}
+.ac_del_button{
+    display: flex;
+    flex-direction: row;
+    gap: 2vmin;
+    height: 10vmin;
+    width: 84vmin;
+}
+.ac_del_button button{
+    height: 10vh;
+    width: 8vw;
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 11px;
+    border: none;
+    box-shadow: 2px 2px 10px 2px gray;
+    cursor: pointer;
+}
+.num_opr_button{
+    height: 56vh;
+    width: 84vmin;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: vmin;
+}
+.num_opr_button button{
+    margin-top: 10px;
+    margin-left: 4px;
+    height: 12vh;
+    width: 20vmin;
+    border-radius: 20px;
+    font-size: 5rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px 2px gray;
+    border: none;
+    cursor: pointer;
+}
+.opr{
+    background-color: rgb(240, 150, 6);
+}
+
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.ac_del_button button:active,
+.num_opr_button button:active {
+    animation: clickAnimation 0.2s ease-in-out;
+}
+
