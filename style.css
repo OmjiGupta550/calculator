@@ -27,11 +27,30 @@ body{
     margin-top: 10px;
     border-radius: 20px;
 }
-.screen input{
+.screen #display{
     height: 100%;
     width: 100%;
     background-color: rgb(57, 46, 46);
     border-radius: 20px;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: right;
+}
+.screen #operation{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(57, 46, 46);
+    position: relative;
+    bottom: 10vmin;
+    left: 2vmin;
+    font-size: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    border: none;
 }
 .buttons{
     height: 65vh;
@@ -90,7 +109,6 @@ body{
         transform: scale(1);
     }
 }
-
 .ac_del_button button:active,
 .num_opr_button button:active {
     animation: clickAnimation 0.2s ease-in-out;
